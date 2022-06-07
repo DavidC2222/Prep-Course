@@ -1,0 +1,5 @@
+* Variables: Es una palabra que puede ser cualquier palabra que contiene un valor que puede ser un numero o una palabra o una operacion matematica
+ * Strings: Cualquier palabra pero debe estar entre comillas "" 
+ * Funciones (argumentos, `return`): Fragmentos de codigo que se pueden usar varias veces 
+ * Declaraciones `if`: SI pasa algo hace una accion SINO ocurre otra cosa
+ * Valores booleanos (`true`, `false`): Como resultado solo hay dos soluciones SI o NO 
