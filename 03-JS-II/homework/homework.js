@@ -18,9 +18,10 @@ function mayoriaDeEdad(edad) {
   //Si es menor, devolver --> "Not allowed"
 if (edad >= 18){
   return "Allowed";
-} else {
-  return "Not Allowed";
-}
+ } 
+  else {
+  return "Not allowed";
+ }
 }
   
 function conection(status) {
@@ -30,11 +31,11 @@ function conection(status) {
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
   if (status === 1){
-    return "ONLINE";
+    return "Online";
   } else if (status === 2) {
-    return "AWAY";
+    return "Away";
   } else {
-    return "OFFLINE";
+    return "Offline";
   }
 }
 
@@ -48,7 +49,7 @@ function saludo(idioma) {
   if (idioma === "aleman"){
     return "Guten Tag!";
   } else if (idioma === "mandarin"){
-    return "Ni hao!";
+    return "Ni Hao!";
   } else if (idioma === "ingles"){
     return "Hello!";
   } else {
@@ -194,7 +195,7 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if (numero % 1 === 0 && numero.length === 3){
+  if (numero < 1000 && numero > 99){
     return true;
   } else {
     return false;
