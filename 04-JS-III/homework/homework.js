@@ -26,12 +26,12 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  var enter = [];
-  for(var i = 0; i < array.length - 1; i++) {
-    enter[i] = array[i] + 1;
+  var nuevoArray = [];
+  for(var i = 0; i < array.length; i++) {
+    nuevoArray[i] = array[i] + 1;
   }
 
-  return enter;
+  return nuevoArray;
 }
 
 
@@ -131,7 +131,7 @@ function cuentoElementos(arreglo){
   let cantidad = 0;
   for(let i = 0; i < arguments.length; i++){
     if (arreglo[i] > 19){
-      cantidad = cantidad + 1;
+      cantidad++
     }
   }
   return cantidad; 
@@ -146,7 +146,7 @@ function diaDeLaSemana(numeroDeDia) {
   if (numeroDeDia === 1 || numeroDeDia === 7){
     return "Es fin de semana";
   } 
-    return "Es dia laboral";
+    return "Es dia Laboral";
   
 } 
 
@@ -224,7 +224,7 @@ function breakStatement(numero) {
     sumaval = sumaval + 2;
     if(sumaval === i) break;
     else {
-      array.push(sumaval);
+      sumarray.push(sumaval);
     }
   }
   if(i < 10) {
@@ -243,9 +243,9 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
-  var sumaarray2 = [];
+  var array = [];
   var sumavalor2 = numero;
-  for(var i= 0; i<10; i++) {
+  for(var i = 0; i < 10; i++) {
     if(i === 5) continue;
     else {
       sumavalor2 = sumavalor2 + 2;
