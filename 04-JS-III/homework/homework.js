@@ -26,12 +26,12 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  var nuevoArray = [1,2,3,4,5];
-  for(var i = 0; i < array.length; i++) {
-    nuevoArray[i] = array[i] + 1;
+  var enter = [];
+  for(var i = 0; i < array.length - 1; i++) {
+    enter[i] = array[i] + 1;
   }
 
-  return nuevoArray;
+  return enter;
 }
 
 
@@ -60,7 +60,7 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  return palabras.join;
+  return palabras.join(" ");
 
 }
 
@@ -72,10 +72,9 @@ function arrayContiene(array, elemento) {
   for (var i = 0; i < array.length; i++){
     if (array[i] === elemento){
       return true;
-    } else {
-      return false;
-    }
-  }
+    } 
+  }  
+    return false;
 }
 
 
@@ -85,7 +84,7 @@ function agregarNumeros(numeros) {
   // Tu código:
   var suma = 0;
   for (var i = 0; i < numeros.length; i++){
-    suma = suma +numero[i];
+    suma = suma +numeros[i];
   }
   return suma; 
 }
@@ -95,12 +94,7 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-  var sumapro = 0;
-  var prom = suma / resultadosTest.length
-  for (var i = 0; i < resultadosTest.length; i++){
-    sumapro = sumapro +resultadosTest[i];
-  }
-  return prom;
+ return agregarNumeros(resultadosTest) / resultadosTest.length;
 }
 
 
@@ -122,7 +116,7 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-  var res = 0;
+  var res = 1;
   if(arguments.length < 1) return 0;
   for(var i = 0; i < arguments.length; i++) {
     res = res * arguments[i];
@@ -134,8 +128,8 @@ function multiplicarArgumentos() {
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-  var cantidad = 0;
-  for(var i = 0; i < arguments.length; i++){
+  let cantidad = 0;
+  for(let i = 0; i < arguments.length; i++){
     if (arreglo[i] > 19){
       cantidad = cantidad + 1;
     }
@@ -151,9 +145,9 @@ function diaDeLaSemana(numeroDeDia) {
   //Escribe tu código aquí   
   if (numeroDeDia === 1 || numeroDeDia === 7){
     return "Es fin de semana";
-  } else {
+  } 
     return "Es dia laboral";
-  }
+  
 } 
 
 
@@ -173,7 +167,7 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  for(var i = 0; i < arreglo.length; i++){
+  for(var i = 0; i < arreglo.length - 1; i++){
     if (arreglo[i] !== arreglo[i+1]){
       return false;
     }
@@ -211,8 +205,8 @@ function mayorACien(array) {
     if(array[i] > 100) {
       valorarray.push(array[i]);
     }
-      return valorarray;
-  }
+  }  
+    return valorarray;
 }
 
 
@@ -227,10 +221,10 @@ function breakStatement(numero) {
   var sumarray = [];
   var sumaval = numero;
   for(var i= 0; i<10; i++) {
-    sumava = sumava + 2;
-    if(sumava === i) break;
+    sumaval = sumaval + 2;
+    if(sumaval === i) break;
     else {
-      array.push(sumava);
+      array.push(sumaval);
     }
   }
   if(i < 10) {
