@@ -1,0 +1,1 @@
+Arrays: es un grupo de elementos que se puede modificar 
