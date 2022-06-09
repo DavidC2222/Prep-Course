@@ -131,7 +131,7 @@ function cuentoElementos(arreglo){
   let cantidad = 0;
   for(let i = 0; i < arguments.length; i++){
     if (arreglo[i] > 19){
-      cantidad++
+      cantidad++;
     }
   }
   return cantidad; 
@@ -252,7 +252,7 @@ function continueStatement(numero) {
       array.push(sumavalor2);
     }
   }
-  return sumaarray2;
+  return array;
 }
 
 
